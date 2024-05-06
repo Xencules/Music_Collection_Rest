@@ -5,7 +5,7 @@ It allows the users to save their album catalogue into a MySQL database with CRU
 Also the users are roled so that a basic user can only fetch data from the database and not create, update or delete it.
 
 ## Features by branches:
-### Master:
+### Main:
     -   Spring Boot Rest CRUD with Global exception handling
         -   Endpoints:
             - GET ALL: http://localhost:8080/api/albums
