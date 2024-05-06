@@ -1,6 +1,7 @@
 package com.xencules.music.rest;
 
 import com.xencules.music.entity.Album;
+import com.xencules.music.exception.MusicNotFoundException;
 import com.xencules.music.service.AlbumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +32,7 @@ public class AlbumRestController {
         Album theAlbum = albumService.findById(albumId);
 
         if (theAlbum == null) {
-            throw new RuntimeException("Album id not found - " + albumId);
+            throw new MusicNotFoundException("Album id not found - " + albumId);
         }
 
         return theAlbum;
@@ -72,7 +73,7 @@ public class AlbumRestController {
         // throw exception if null
 
         if (tempAlbum == null) {
-            throw new RuntimeException("Album id not found - " + albumId);
+            throw new MusicNotFoundException("Album id not found - " + albumId);
         }
 
         albumService.deleteById(albumId);

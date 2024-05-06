@@ -6,7 +6,7 @@ Also the users are roled so that a basic user can only fetch data from the datab
 
 ## Features by branches:
 ### Master:
-    -   Spring Boot Rest CRUD
+    -   Spring Boot Rest CRUD with Global exception handling
         -   Endpoints:
             - GET ALL: http://localhost:8080/api/albums
             - GET SINGLE: http://localhost:8080/api/albums/{albumId}
