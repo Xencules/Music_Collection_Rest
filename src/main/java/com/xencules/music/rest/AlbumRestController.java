@@ -53,10 +53,10 @@ public class AlbumRestController {
         return dbAlbum;
     }
 
-    // add mapping for PUT /employees - update existing employee
+    // add mapping for PUT /albums - update existing album
 
     @PutMapping("/albums")
-    public Album updateEmployee(@RequestBody Album theAlbum) {
+    public Album updateAlbum(@RequestBody Album theAlbum) {
 
         Album dbAlbum = albumService.save(theAlbum);
 
